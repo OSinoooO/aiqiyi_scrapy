@@ -12,7 +12,7 @@ from scrapy.log import logger
 
 class AiqiyiPipeline(object):
     def __init__(self):
-        self.conn = connect(host='localhost', port=3306, user='root', password='199577zhou', database='aiqiyi', charset='utf8')
+        self.conn = connect(host='localhost', port=3306, user='root', password='123456', database='aiqiyi', charset='utf8')
         self.cs = self.conn.cursor()
 
     def process_item(self, item, spider):
